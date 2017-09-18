@@ -10,3 +10,49 @@ header {
 	color: white;
 	font-size: 20px;
 }
+
+/*Control size and maintain proportion*/
+#your-img {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    float: left;
+    margin: 10px 20px 10px 0px;
+}
+/*list-style-type: none; - Removes the bullets. A navigation bar does not need list markers
+Set margin: 0; and padding: 0; to remove browser default settings*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #eee;
+}
+
+li{
+	float: right;
+}
+
+/*This is the Contact, Portfolio, and About bar*/
+li a{
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color to #fff (white) on hover */
+li a:hover {
+    background-color: #fff;
+}
+
+/*Add an "active" class to the current link to let the user know which page he/she is on*/
+.active {
+    background-color: #3cc;
+}
+
+footer {
+	float: bottom;
+}
