@@ -1,53 +1,64 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-
 <head>
-	<meta charset="utf-8">
 	<title>David's Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="C:\Users\David\Homework\Basic-Portfolio\Assets\CSS\style.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 
 <body>
-	<header>
-		David Morales
-	</header>
 
-
-		<ul>
-			<li><a href="C:/Users/David/Homework/Basic-Portfolio/index.html">About</a></li>
-			
-			<li><a href="C:/Users/David/Homework/Basic-Portfolio/portfolio.html">Portfolio</a></li>
-			
-			<li><a class="active" href="C:/Users/David/Homework/Basic-Portfolio/contact.html">Contact</a></li>
-		</ul>
-
-<!--This is a Contact Form-->
-		<div class="container">
-			<form action="/action_page.php">
-
-				<label for="fname">Name</label>
-					<input type="text" id="fname" name="fullname" placeholder="John Doe">
-
-				<label for="email">email</label>
-					<input type="text" id="email" name="mail" placeholder="John Doe">
-				<label for="message">Message</label>
-					<textarea id="message" name="message" placeholder="Type here" style="height: 200px"></textarea>
-				<input type="Submit" value="Submit">
-
-			</form>
+	<header class="header">
+		<div class="name">
+			<h1>David Morales</h1>
 		</div>
 
+		<nav class="menu">
+				<ul>
+					<li><a href="index.html" style="text-decoration: none"> About</a></li>
+					<li><a href="portfolio.html" style="text-decoration: none">Portfolio</a></li>
+					<li><a href="contact.html" style="text-decoration: none">Contact</a></li>
+				</ul>
+		</nav>
+	</header> 
+		
+		
+	<div class="container">
+		<h1>Contact</h1>
+		<hr>
+  		<form action="/action_page.php">
 
+   			<label for="fname">First Name</label>
+    		<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-
-	<footer>
-		&#x24B8;Copy Right 2017 David Morales
-	</footer>
+    		<label for="lname">Last Name</label>
+    		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 	
+    		<label for="subject">Subject</label>
+    		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    		<input type="submit" value="Submit">
+	  	</form>
+	</div>
+
+
+				<section id="contact-info">
+					<h2>Connect with me</h2>
+					<hr>
+			
+						<a href="https://github.com/Citizen32"><img border="0" alt="Github" src="assets/images/github.png" width="50" height="50"></a>
+						<a href="https://www.linkedin.com/in/david-morales-0a9966119/"><img border="0" alt="Linkedin" src="assets/images/linkedin.png" width="50" height="50"></a>
+						<a href="https://www.behance.net/morgarcrea660f"><img border="0" alt="Behance" src="assets/images/behance.png" width="50" height="50"></a>
+				</section>
 	
 
+
+<footer>
+	<p> &copy Copyright 2017 David Morales<p>
+</footer>
 
 
 </body>
